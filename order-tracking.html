@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Modern Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order-tracking.css">
+</head>
+<body>
+    <header>
+        <!-- Same navbar as index.html -->
+    </header>
+    <main class="tracking-container">
+        <div class="tracking-content">
+            <h1>Order Status</h1>
+            <div class="order-progress">
+                <div class="progress-step" data-status="processing">
+                    <div class="step-icon">1</div>
+                    <div class="step-label">Processing</div>
+                </div>
+                <div class="progress-step" data-status="confirmed">
+                    <div class="step-icon">2</div>
+                    <div class="step-label">Confirmed</div>
+                </div>
+                <div class="progress-step" data-status="shipped">
+                    <div class="step-icon">3</div>
+                    <div class="step-label">Shipped</div>
+                </div>
+                <div class="progress-step" data-status="delivered">
+                    <div class="step-icon">4</div>
+                    <div class="step-label">Delivered</div>
+                </div>
+            </div>
+            <div class="order-details">
+                <h2>Order Details</h2>
+                <div id="order-info"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/order-tracking.js"></script>
+</body>
+</html>

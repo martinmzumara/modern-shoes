@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Modern Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">Modern Shoes</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/sneakers.html">Sneakers</a></li>
+                <li><a href="/boots.html">Boots</a></li>
+                <li><a href="/formal.html">Formal</a></li>
+                <li><a href="/sports.html">Sports</a></li>
+                <li><a href="/sandals.html">Sandals</a></li>
+            </ul>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="products-container">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Size</h4>
+                <div class="size-grid">
+                    <button class="size-btn" data-size="7">7</button>
+                    <button class="size-btn" data-size="8">8</button>
+                    <button class="size-btn" data-size="9">9</button>
+                    <button class="size-btn" data-size="10">10</button>
+                    <button class="size-btn" data-size="11">11</button>
+                    <button class="size-btn" data-size="12">12</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" id="price-range" min="0" max="300" step="10">
+                <div class="price-labels">
+                    <span id="min-price">$0</span>
+                    <span id="max-price">$300</span>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h4>Color</h4>
+                <div class="color-options">
+                    <button class="color-btn" data-color="black" style="background: black;"></button>
+                    <button class="color-btn" data-color="white" style="background: white;"></button>
+                    <button class="color-btn" data-color="gray" style="background: gray;"></button>
+                </div>
+            </div>
+        </aside>
+        <section class="products-grid" id="products-grid">
+            <!-- Products will be dynamically inserted here -->
+        </section>
+    </main>
+</body>
+<script src="js/products.js"></script>
+</html>

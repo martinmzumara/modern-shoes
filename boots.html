@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boots - Modern Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">Modern Shoes</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/sneakers.html">Sneakers</a></li>
+                <li><a href="/boots.html" class="active">Boots</a></li>
+                <li><a href="/formal.html">Formal</a></li>
+                <li><a href="/sports.html">Sports</a></li>
+                <li><a href="/sandals.html">Sandals</a></li>
+            </ul>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="category-container">
+            <aside class="filters">
+                <h2>Filters</h2>
+                <div class="filter-section">
+                    <h3>Size</h3>
+                    <div class="size-grid">
+                        <button class="size-btn" data-size="7">7</button>
+                        <button class="size-btn" data-size="8">8</button>
+                        <button class="size-btn" data-size="9">9</button>
+                        <button class="size-btn" data-size="10">10</button>
+                        <button class="size-btn" data-size="11">11</button>
+                        <button class="size-btn" data-size="12">12</button>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="black" style="background-color: black;"></button>
+                        <button class="color-btn" data-color="brown" style="background-color: brown;"></button>
+                        <button class="color-btn" data-color="tan" style="background-color: tan;"></button>
+                        <button class="color-btn" data-color="gray" style="background-color: gray;"></button>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <input type="range" id="price-range" min="0" max="300" step="10" value="300">
+                    <div class="price-labels">
+                        <span>$0</span>
+                        <span id="price-value">$300</span>
+                    </div>
+                </div>
+            </aside>
+            <section class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </section>
+        </div>
+    </main>
+    <script src="js/products.js"></script>
+</body>
+</html>

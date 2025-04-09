@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Modern Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same navbar as index.html -->
+    </header>
+    <main class="product-detail-container">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-product-image" src="" alt="">
+            </div>
+            <div class="thumbnail-images" id="thumbnail-container">
+                <!-- Thumbnails will be dynamically inserted -->
+            </div>
+        </div>
+        <div class="product-info">
+            <h1 id="product-name"></h1>
+            <p class="price" id="product-price"></p>
+            <p class="description" id="product-description"></p>
+            
+            <div class="size-selection">
+                <h3>Select Size</h3>
+                <div class="size-grid" id="size-options">
+                    <!-- Sizes will be dynamically inserted -->
+                </div>
+            </div>
+            
+            <div class="color-selection">
+                <h3>Select Color</h3>
+                <div class="color-options" id="color-options">
+                    <!-- Colors will be dynamically inserted -->
+                </div>
+            </div>
+            
+            <button class="add-to-cart-btn" id="add-to-cart">
+                Add to Cart
+            </button>
+            
+            <div class="size-guide">
+                <h3>Size Guide</h3>
+                <table>
+                    <tr>
+                        <th>US</th>
+                        <th>UK</th>
+                        <th>EU</th>
+                        <th>CM</th>
+                    </tr>
+                    <!-- Add size conversion rows -->
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/product-detail.js"></script>
+</html>

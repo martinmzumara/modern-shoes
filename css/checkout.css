@@ -1,0 +1,116 @@
+.checkout-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.order-summary {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--bg-primary);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-name {
+    font-weight: 600;
+}
+
+.item-price {
+    color: var(--accent);
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--bg-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.checkout-form {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--bg-secondary);
+    border-radius: 4px;
+    color: var(--text-primary);
+}
+
+input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background: var(--accent-hover);
+}
+
+#card-element {
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#card-errors {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}

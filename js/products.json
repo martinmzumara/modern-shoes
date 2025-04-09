@@ -1,0 +1,69 @@
+{
+  "categories": {
+    "sneakers": {
+      "name": "Sneakers",
+      "products": [
+        {
+          "id": "snk-001",
+          "name": "Urban Runner",
+          "price": 129.99,
+          "description": "Lightweight and comfortable sneakers for daily wear",
+          "sizes": [7, 8, 9, 10, 11, 12],
+          "colors": ["black", "white", "gray"],
+          "images": ["/images/sneakers/urban-runner-1.jpg", "/images/sneakers/urban-runner-2.jpg"]
+        },
+        {
+          "id": "snk-002",
+          "name": "Sport Elite",
+          "price": 159.99,
+          "description": "High-performance athletic sneakers with advanced cushioning",
+          "sizes": [7, 8, 9, 10, 11, 12],
+          "colors": ["blue", "red", "black"],
+          "images": ["/images/sneakers/sport-elite-1.jpg", "/images/sneakers/sport-elite-2.jpg"]
+        }
+      ]
+    },
+    "boots": {
+      "name": "Boots",
+      "products": [
+        {
+          "id": "boot-001",
+          "name": "Classic Leather Boot",
+          "price": 199.99,
+          "description": "Timeless leather boots perfect for any occasion",
+          "sizes": [7, 8, 9, 10, 11, 12],
+          "colors": ["brown", "black"],
+          "images": ["images/boots/classic-leather-1.jpg", "images/boots/classic-leather-2.jpg"]
+        }
+      ]
+    },
+    "formal": {
+      "name": "Formal",
+      "products": [
+        {
+          "id": "formal-001",
+          "name": "Executive Oxford",
+          "price": 179.99,
+          "description": "Elegant oxford shoes for business and formal events",
+          "sizes": [7, 8, 9, 10, 11, 12],
+          "colors": ["black", "brown"],
+          "images": ["images/formal/executive-oxford-1.jpg", "images/formal/executive-oxford-2.jpg"]
+        }
+      ]
+    },
+    "sandals": {
+      "name": "Sandals",
+      "products": [
+        {
+          "id": "sandal-001",
+          "name": "Summer Comfort",
+          "price": 89.99,
+          "description": "Comfortable and stylish sandals for warm weather",
+          "sizes": [7, 8, 9, 10, 11, 12],
+          "colors": ["brown", "black", "tan"],
+          "images": ["images/sandals/summer-comfort-1.jpg", "images/sandals/summer-comfort-2.jpg"]
+        }
+      ]
+    }
+  }
+}

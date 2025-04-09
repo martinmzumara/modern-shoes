@@ -1,0 +1,48 @@
+.confirmation-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.confirmation-content {
+    background: var(--bg-secondary);
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirmation-icon {
+    font-size: 4rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.confirmation-content h1 {
+    margin-bottom: 1rem;
+}
+
+.confirmation-content p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.order-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+    background: var(--bg-secondary);
+}

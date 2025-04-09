@@ -1,0 +1,131 @@
+.category-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 60px;
+}
+
+.filters {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    border: 1px solid var(--border-color);
+}
+
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.filter-section h2,
+.filter-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.size-btn {
+    padding: 0.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.size-btn:hover,
+.size-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.color-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.color-btn.active {
+    border-color: var(--accent);
+}
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+}
+
+#price-range {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    border: 1px solid var(--border-color);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-name {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        position: static;
+        margin-bottom: 1rem;
+    }
+}
