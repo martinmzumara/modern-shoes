@@ -2,10 +2,10 @@
   "name": "modern-shoes",
   "version": "1.0.0",
   "description": "Modern Shoes E-commerce Website",
-  "main": "server/server.js",
+  "main": "server/static-server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node server/static-server.js",
+    "dev": "nodemon server/static-server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
