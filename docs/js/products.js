@@ -11,7 +11,8 @@ class ProductsManager {
 
     async loadProducts() {
         try {
-            const response = await fetch('/js/products.json');
+            // Update the fetch path to be relative
+            const response = await fetch('js/products.json');
             const data = await response.json();
             this.products = Object.values(data.categories)
                 .flatMap(category => category.products);
@@ -40,7 +41,7 @@ class ProductsManager {
                 <div class="product-info">
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-price">$${product.price}</p>
-                    <a href="/product-detail.html?id=${product.id}" class="cta-button">
+                    <a href="product-detail.html?id=${product.id}" class="cta-button">
                         View Details
                     </a>
                 </div>

@@ -22,10 +22,10 @@ class ProductDetail {
 
     async loadProduct(productId) {
         try {
-            const response = await fetch('/js/products.json');
+            // Update the fetch path to be relative
+            const response = await fetch('js/products.json');
             const data = await response.json();
             
-            // Find the product in any category
             this.product = Object.values(data.categories)
                 .flatMap(category => category.products)
                 .find(product => product.id === productId);

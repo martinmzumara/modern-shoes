@@ -10,7 +10,7 @@
           "description": "Lightweight and comfortable sneakers for daily wear",
           "sizes": [7, 8, 9, 10, 11, 12],
           "colors": ["black", "white", "gray"],
-          "images": ["/images/sneakers/urban-runner-1.jpg", "/images/sneakers/urban-runner-2.jpg"]
+          "images": ["images/sneakers/urban-runner-1.jpg", "images/sneakers/urban-runner-2.jpg"]
         },
         {
           "id": "snk-002",
@@ -19,7 +19,7 @@
           "description": "High-performance athletic sneakers with advanced cushioning",
           "sizes": [7, 8, 9, 10, 11, 12],
           "colors": ["blue", "red", "black"],
-          "images": ["/images/sneakers/sport-elite-1.jpg", "/images/sneakers/sport-elite-2.jpg"]
+          "images": ["images/sneakers/sport-elite-1.jpg", "images/sneakers/sport-elite-2.jpg"]
         }
       ]
     },
